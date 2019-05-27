@@ -1,0 +1,14 @@
+gcloud container clusters create kafka-docker-kuber \
+--zone us-central1-a \
+--addons HttpLoadBalancing,HorizontalPodAutoscaling,KubernetesDashboard \
+--cluster-version 1.13.5-gke.10 \
+--async \
+--cluster-ipv4-cidr 10.0.0.0/14 \
+--disk-size 50 \
+--disk-type pd-ssd \
+--enable-autorepair \
+--enable-autoupgrade \
+--image-type UBUNTU \
+--machine-type n1-standard-1 \
+--num-nodes 3 \
+--node-locations us-central1-a
