@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 EXPOSE 9092
-ARG KAFKA_VER=2.2.0
+ARG KAFKA_VER=2.2.1
 ARG SCALA_VER=2.12
 ARG MIRROR=http://mirror.downloadvn.com/apache
 RUN apt-get -y update
